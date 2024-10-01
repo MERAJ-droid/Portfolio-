@@ -1,0 +1,13 @@
+/* components/common/TypingEffect.css */
+.typing-effect {
+    display: inline-flex; /* Ensure inline-block to maintain space */
+    min-width: 12ch; /* Adjust min-width to ensure space is maintained */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing-effect span {
+    border-right: 2px solid;
+    white-space: nowrap;
+  }
+  
