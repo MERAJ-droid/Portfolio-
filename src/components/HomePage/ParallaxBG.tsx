@@ -160,7 +160,7 @@ export default function ParallaxBG(props:{children:ReactNode})
         ref={SmallImageRef} 
         src={SmallImage} 
         alt="Small image" 
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-19 h-19 object-contain z-0"
+        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-19 h-19 object-contain z-[-1]"
     />
 
 
