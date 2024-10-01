@@ -10,7 +10,7 @@ export default function FeaturedSection()
 {
     const [phaseIndex,setPhaseIndex] = useState(0);
     const ref = useRef<HTMLDivElement>(null)
-    const phases = ['STARFLIX','DV',"PENGUIN"];
+    const phases = ['STARFLIX',"PENGUIN"];
 
     useEffect(()=>{
         deltaPhase(0);
@@ -136,7 +136,7 @@ export default function FeaturedSection()
                     <br /><br /><br />
 
                     <div className="flex gap-4 mt-4">
-                        <a href='https://github.com/nytrixis' target='_blank' className='bg-[#3B82F6] w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base grid place-content-center'>VISIT</a>
+                        <a href='https://github.com/MERAJ-droid' target='_blank' className='bg-[#3B82F6] w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base grid place-content-center'>VISIT</a>
                     </div>
                     </div>
                 </div>
