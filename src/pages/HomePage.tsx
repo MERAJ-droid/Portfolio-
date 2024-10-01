@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import Button from '../components/common/Button';
 import AboutMe from '../components/HomePage/AboutMe';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { TransitionLink } from '../contexts/PageLoaderContext';
 import ParallaxBG from '../components/HomePage/ParallaxBG';
 import { gsap } from "gsap";
@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function HomePage() {
   const heroTextRef = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
-  const [forceUpdate, setForceUpdate] = useState(false);
+
   useEffect(() => {
     let ctx = gsap.context(() => {
       heroTextRef.forEach((ref, index) => {
@@ -38,12 +38,7 @@ function HomePage() {
   }, []);
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setForceUpdate(prev => !prev);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, []);
+  
 
 
 
@@ -53,7 +48,7 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <ParallaxBG key={forceUpdate.toString()}>
+      <ParallaxBG>
         <div className='flex flex-col justify-center items-center'>
           <div ref={heroTextRef[3]} className='overflow-y-clip'><h1 className='text-xl md:text-4xl opacity-100'><span className='text-accent opacity-100 font-bold'>Hey There !</span> this is </h1></div> <br />
           <div ref={heroTextRef[2]} className='overflow-y-clip'><h1 className='text-3xl md:text-7xl font-extrabold uppercase'><AnimatedText delay={200} text='Meraj' /></h1></div>
