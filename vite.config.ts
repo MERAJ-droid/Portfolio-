@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Nytrixis",
+        name: "Meraj",
         short_name: "Create",
         theme_color: "#0d64c1",
         background_color: "#0a1015",
