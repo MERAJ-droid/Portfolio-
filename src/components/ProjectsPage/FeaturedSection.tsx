@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import BUZZUPBG from '../../assets/Buzzup.jpg'
 // import Button from '../common/Button'
-import { Canvas } from '@react-three/fiber';
+// import { Canvas } from '@react-three/fiber';
 
 import  TD from '../../assets/tds.mp4';
 // import DV from '../../assets/dhanvantari.png';
-import Penguin from '../models/Penguin';
+// import Penguin from '../models/Penguin';
 export default function FeaturedSection()
 {
     const [phaseIndex,setPhaseIndex] = useState(0);
@@ -125,9 +125,9 @@ export default function FeaturedSection()
                 <div className="w-[100vw] h-full relative flex flex-col md:flex-row sm:justify-center items-center p-4 lg:px-32 xl:px-64">
                     {/* <ModelCanvas className=''/> */}
                     <div className='w-full h-96' ref={ref}>
-                        <Canvas camera={{fov:35,position:[0,0,6]}}>
+                        {/* /* <Canvas camera={{fov:35,position:[0,0,6]}}>
                             <Penguin CanvasRef={ref}/>
-                        </Canvas>
+                        </Canvas> */ }
                     </div>
                     <img src={BUZZUPBG} className="absolute top-0 left-0 -z-20 w-full h-full object-cover"/>
                     <div className="w-full flex flex-col justify-center">

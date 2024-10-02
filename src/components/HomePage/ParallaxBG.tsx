@@ -7,7 +7,7 @@ import Wallpaper2 from "../../assets/wallpaper2.png?url";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import SmallImage from "../../assets/toppng.com-spider-man-homecoming-by-spiderman-hanging-upside-dow-461x687.png";
+import SmallImage from "../../assets/toppng.com-spider-man-homecoming-by-spiderman-hanging-upside-dow-461x687.png";  //meraj
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +18,7 @@ export default function ParallaxBG(props:{children:ReactNode})
     const BGFront2Ref = useRef<HTMLImageElement>(null);
     const BGFrontRef = useRef<HTMLImageElement>(null);
 
-    const SmallImageRef = useRef<HTMLImageElement>(null);
+    const SmallImageRef = useRef<HTMLImageElement>(null);   //meraj
 
     const centerDiv = useRef<HTMLDivElement>(null);
 
@@ -42,7 +42,7 @@ export default function ParallaxBG(props:{children:ReactNode})
             )
 
 
-            gsap.fromTo(
+            gsap.fromTo(                                //meraj
                 SmallImageRef.current,
                 {
                     y: -50,
@@ -60,7 +60,7 @@ export default function ParallaxBG(props:{children:ReactNode})
                         toggleActions: 'play none none reverse',
                     },
                 }
-            )
+            )                                               //meraj
 
 
 
@@ -156,11 +156,11 @@ export default function ParallaxBG(props:{children:ReactNode})
 
 
 
-                        <img 
+                        <img                                                                                                //meraj
         ref={SmallImageRef} 
         src={SmallImage} 
-        alt="Small image" 
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-19 h-19 object-contain z-0"
+        alt="Small image"                                                                                                  
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-19 h-19 object-contain z-0"    //meraj
     />
 
 
