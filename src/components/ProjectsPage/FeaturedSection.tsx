@@ -90,7 +90,7 @@ export default function FeaturedSection()
             <div className="w-[100vw] h-full relative flex flex-col justify-center items-center p-4 lg:px-32 xl:px-64">
                     <video src={TD} className="absolute top-0 left-0 w-full h-full object-cover" autoPlay muted loop/>
                     <div className="z-10 text-center">
-                        <h1 className='animate left font-black text-6xl md:text-9xl leading-tight'>STAR<span className='text-blue-500'>FLIX</span>
+                        <h1 className='animate left font-black text-6xl md:text-9xl leading-tight'>STAR<span className='text-purple-500'>FLIX</span>
                         </h1>
                         <h1 className='animate left delay-1 font-extrabold text-2xl md:text-5xl leading-tight mt-4'>
                             Discover the <span className='text-accent-500'>Universe</span>
@@ -102,7 +102,7 @@ export default function FeaturedSection()
                             <a 
                                 href='https://github.com/MERAJ-droid/StarFlix' 
                                 target='_blank' 
-                                className='bg-blue-500 text-white w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base inline-block'
+                                className='bg-purple-500 text-white w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base inline-block'
                             >
                                 EXPLORE NOW
                             </a>
@@ -136,7 +136,7 @@ export default function FeaturedSection()
                     <br /><br /><br />
 
                     <div className="flex gap-4 mt-4">
-                        <a href='https://github.com/MERAJ-droid' target='_blank' className='bg-[#3B82F6] w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base grid place-content-center'>VISIT</a>
+                        <a href='https://github.com/MERAJ-droid' target='_blank' className='bg-[#CDC1FF] w-64 rounded-xl px-4 py-2.5 md:py-4 md:px-6 hover:scale-105 transition-transform active:scale-95 text-xs md:text-base grid place-content-center'>VISIT</a>
                     </div>
                     </div>
                 </div>

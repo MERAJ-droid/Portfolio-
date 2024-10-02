@@ -189,7 +189,7 @@ export default function AboutMe(props:{sectionRef:React.RefObject<HTMLDivElement
                     <p ref={MeRef[1]} className='text-justify mt-6 text-xs font-light md:text-base mb-4'>
                     Greetings! I'm a CSE undergrad from Dr. B.C. Roy Engineering College, graduating in 2026. I'm all about full-stack web development, sprinkled with a bit of AI experimentation and a growing curiosity for game development.
                     <br></br>
-                    When I'm not busy adding features or breaking things in my projects, I'm usually debugging my life decisions or wondering why CSS hates me. Code, caffeine, and a hint of sarcasm are my daily essentials. Let’s team up and turn ideas into something amazing (or at least something that compiles without errors).
+                    When I'm not busy adding features or breaking things in my projects, I'm usually debugging my life decisions or wondering why CSS hates me. Code, caffeine, and a hint of sarcasm are my daily essentials. Let’s turn ideas into something amazing (or at least something that compiles without errors).
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 overflow-y-clip hidden lg:block relative">

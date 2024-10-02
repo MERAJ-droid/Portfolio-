@@ -50,7 +50,7 @@ function ContactPage() {
         <>
             <div className="flex flex-col justify-between min-h-screen overflow-x-hidden">
                 <Navbar margin />
-                <div className="hero-section flex flex-col items-center justify-center h-3/4 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center">
+                <div className="hero-section flex flex-col items-center justify-center h-3/4 bg-gradient-to-r from-purple-500 to-violet-600 text-white text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
                     <p className="text-lg md:text-xl mb-8">Feel free to reach out through any of the channels below.</p>
                 </div>
@@ -137,7 +137,7 @@ function ContactPage() {
                             </div>
                             <div className="flex items-center justify-between">
                                 <button
-                                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                    className="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                                     type="button"
                                 >
                                     Send Message

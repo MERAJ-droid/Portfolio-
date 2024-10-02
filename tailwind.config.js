@@ -10,9 +10,9 @@ export default {
       colors: {
         'text': '#e7ebf3',
         'background': '#0a1015',
-        'primary': '#164478',
+        'primary': '#624E88',
         'secondary': '#0d1e2b',
-        'accent': '#CCFFFF',
+        'accent': '#CDC1FF',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
