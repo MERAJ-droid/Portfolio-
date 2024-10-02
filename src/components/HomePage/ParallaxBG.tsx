@@ -1,7 +1,7 @@
 import { useRef, useEffect, ReactNode } from "react";
-import BG from "../../assets/BG.png?url";
+import BG from "../../assets/Frontt.jpg";
 import BGFront from "../../assets/Frontt.jpg?url";
-import BGFront2 from "../../assets/Front2.png?url";
+import BGFront2 from "../../assets/Frontt.jpg?url";
 import Wallpaper1 from "../../assets/wallpaper1.png?url";
 import Wallpaper2 from "../../assets/wallpaper2.png?url";
 import { gsap } from "gsap";
