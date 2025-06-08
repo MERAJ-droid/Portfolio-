@@ -7,6 +7,12 @@ export default function ProjectsList() {
             sectionTitle: "Web Development Projects",
             data: [
                 {
+                    title: "KAWACH",
+                    hoverTitle: "DECENTRALIZED HEALTHCARE APP",
+                    subTitle: "A DECENTRALIZED HEALTHCARE APP THAT ENSURES THE SECURITY AND PRIVACY OF PATIENT DATA WHILE PROVIDING A USER-FRIENDLY INTERFACE FOR DOCTORS AND PATIENTS.",
+                    link: "https://github.com/MERAJ-droid/kawach",
+                },
+                {
                     title: "DeFi",
                     hoverTitle: "DECENTRALIZED FINANCE APP",
                     subTitle: "ENABLING USERS TO LEND, BORROW AND TRADE CRYPTOCURRENCIES IN A SECURE AND TRANSPARENT, AND DECENTRALIZED MANNER.",

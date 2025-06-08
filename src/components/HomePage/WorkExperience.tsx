@@ -17,21 +17,17 @@ type Experience = {
 const WorkExperience: React.FC = () => {
   const experience: Experience[] = [
     {
-      title: "WTI TRAVELS",
-      hoverTitle: "WEB DEVELOPER",
-      type: "FREELANCE",
+      title: "NIT DURGAPUR",
+      hoverTitle: "AI/ML RESEARCH INTERN",
+      type: "INTERN",
       icon: IconCode as React.ComponentType<{ size?: number; stroke?: number; className?: string }>,
       subTitle: (
         <>
-          <h1 className="font-bold">JAN 2024 - APR 2024</h1>
+          <h1 className="font-bold">MAY 2025 - PRESENT</h1>
           <div className="mt-4">
-          Developed the official website for WTI Travels, by designing user friendly interfaces for web
-          integrating mobile responsiveness
+           Working under academic mentorship to explore real-world applications of Deep Learning, Image Processing, and AI/ML technologies. Actively involved in model experimentation, literature review, and the development of intelligent systems using Python and popular deep learning frameworks.
             <br className="mt-4" />
-            Integrated booking systems and managed
-            tours and travels, incorporating payment
-            gateways leading to a 125% increase in the
-            first two months.
+            Currently contributing to a research initiative in the field of Deep Learning and Image Processing, with applications in Artificial Intelligence and Computer Vision.
           </div>
         </>
       ),

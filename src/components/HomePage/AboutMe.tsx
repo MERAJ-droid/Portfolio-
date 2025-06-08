@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AboutMe(props:{sectionRef:React.RefObject<HTMLDivElement>})
 {
     // const age = "CODER SINCE 2018 CODER SINCE 2018 CODER SINCE 2018 CODER SINCE 2018 CODER SINCE 2018";
-    const about_me = "Hello World! Again...Hello World! Again...Hello World! Again...Hello World! Again... ";
-    const alias = "MERAJ MERAJ MERAJ MERAJ MERAJ MERAJ";
-    const bday = "Will code for coffee. Will code for coffee.Will code for coffee. Will code for coffee.";
+    const about_me = "FULL STACK DEVELOPER • AI/ML ENTHUSIAST • PROBLEM SOLVER • FULL STACK DEVELOPER • AI/ML ENTHUSIAST • PROBLEM SOLVER • ";
+const alias = "MERAJ HUSSAIN • SOFTWARE ENGINEER • MERAJ HUSSAIN • SOFTWARE ENGINEER • MERAJ HUSSAIN • SOFTWARE ENGINEER • ";
+const bday = "BUILDING THE FUTURE WITH CODE • INNOVATION THROUGH TECHNOLOGY • BUILDING THE FUTURE WITH CODE • INNOVATION THROUGH TECHNOLOGY • ";
 
     const parentRef = useRef<HTMLDivElement>(null);
     const refs = [useRef<HTMLHeadingElement>(null),useRef<HTMLHeadingElement>(null),useRef<HTMLHeadingElement>(null),useRef<HTMLHeadingElement>(null),useRef<HTMLHeadingElement>(null)];
@@ -181,15 +181,15 @@ export default function AboutMe(props:{sectionRef:React.RefObject<HTMLDivElement
                     <hr className='border-primary border-2 mt-4'/>
                     <div className="mt-4 flex flex-wrap gap-1">
                         {
-                            ["Full Stack Web Developer","Competitive Programmer","Game Developer"].map((value,index)=>{
+                            ["Full Stack Web Developer","Open Source Contributor","Web3 Developer"].map((value,index)=>{
                                 return <div key={index} ref={tagsRef[index]} className="cursor-pointer fill-hover relative grow border-2 border-white/10 rounded-lg flex p-2 lg:p-4 justify-center hover:grow-[2] transition-[flex-grow] duration-300 text-xs"><span>{value}</span></div>
                             })
                         }
                     </div>
                     <p ref={MeRef[1]} className='text-justify mt-6 text-xs font-light md:text-base mb-4'>
-                    Greetings! I'm a CSE undergrad from Dr. B.C. Roy Engineering College, graduating in 2026. I'm all about full-stack web development, sprinkled with a bit of AI experimentation and a growing curiosity for game development.
+                    I'm a CSE undergrad from Dr. B.C. Roy Engineering College, graduating in 2026. I specialize in full-stack web development, with a growing knack for AI/ML, image processing, and deep learning (currently interning at NIT Durgapur). Lately, I've also been poking around in blockchain, Solidity, and decentralized systems, because why not make things more complex?
                     <br></br>
-                    When I'm not busy adding features or breaking things in my projects, I'm usually debugging my life decisions or wondering why CSS hates me. Code, caffeine, and a hint of sarcasm are my daily essentials. Let’s turn ideas into something amazing (or at least something that compiles without errors).
+                    When I'm not building dashboards or tweaking neural networks, I'm probably debugging life choices or still arguing with CSS. Code, caffeine, and chaotic curiosity keep me going. Let's turn ideas into something smart (or at least something that runs).
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 overflow-y-clip hidden lg:block relative">

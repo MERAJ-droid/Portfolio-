@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import BUZZUPBG from '../../assets/Buzzup.jpg'
-// import Button from '../common/Button'
+import Button from '../common/Button'
 // import { Canvas } from '@react-three/fiber';
 
 import  TD from '../../assets/tds.mp4';
+import CV from '../../assets/CV.png';
 // import DV from '../../assets/dhanvantari.png';
 // import Penguin from '../models/Penguin';
 export default function FeaturedSection()
@@ -110,16 +111,16 @@ export default function FeaturedSection()
                     </div>
                 </div>
 
-                {/* <div className="w-[100vw] h-full relative flex flex-col justify-center items-center">
+                <div className="w-[100vw] h-full relative flex flex-col justify-center items-center">
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
-                        <img src={DV} className="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Background"/>
+                        <img src={CV} className="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Background"/>
                         <div className="z-20 text-center">
-                            <a target='_blank' href="https://github.com/nytrixis/Dhanvantari">
+                            <a target='_blank' href="https://github.com/MERAJ-droid/CredVault">
                                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> <br /> <br /> <br /><br />
                                 <Button color='primary' className='mt-8 w-48'>View Project</Button>
                             </a>
                         </div>
-                </div> */}
+                </div>
 
 
                 <div className="w-[100vw] h-full relative flex flex-col md:flex-row sm:justify-center items-center p-4 lg:px-32 xl:px-64">

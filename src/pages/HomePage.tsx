@@ -56,7 +56,7 @@ function HomePage() {
           <div ref={heroTextRef[1]} 
           className='overflow-y-clip text-xl md:text-4xl font-bold text-accent opacity-90'><TypingEffect /></div>
           <div ref={heroTextRef[0]} className='bg-red flex gap-5 mt-4'>
-          <a href='/assets/Meraj_Resume[1].pdf' download>
+          <a href='/assets/MERAJ_RESUME.pdf' download>
             <Button color='primary' className='md:w-48'>RESUME</Button>
           </a>
 

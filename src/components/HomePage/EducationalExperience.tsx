@@ -54,11 +54,11 @@ const EducationalExperience: React.FC = () => {
     }
   };
 
-  const addToRightRefs = (el: HTMLDivElement) => {
-    if (el && !rightSectionRefs.current.includes(el)) {
-      rightSectionRefs.current.push(el);
-    }
-  };
+  // const addToRightRefs = (el: HTMLDivElement) => {
+  //   if (el && !rightSectionRefs.current.includes(el)) {
+  //     rightSectionRefs.current.push(el);
+  //   }
+  // };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -78,7 +78,7 @@ const EducationalExperience: React.FC = () => {
             </div>
           </div>
           {/* Right Section */}
-          <div className="flex w-full justify-start mb-8">
+          {/* <div className="flex w-full justify-start mb-8">
             <div ref={addToRightRefs} className="w-1/2 pl-10 relative">
               <div className="absolute right-[-5px] top-0 h-full border-l-2 border-transparent"></div>
               <div className="relative bg-background pr-10 text-right">
@@ -87,7 +87,7 @@ const EducationalExperience: React.FC = () => {
                 <p className='text-primary'>2020-2022</p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Left Section */}
           {/* <div className="flex w-full justify-end mb-8">
             <div ref={addToLeftRefs} className="w-1/2 pr-4 relative">
