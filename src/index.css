@@ -178,3 +178,217 @@ body
     -webkit-text-stroke: 0;
   }
 }
+
+/* Dark Loading Container */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.loading-container.visible {
+  opacity: 1;
+}
+
+.loading-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(20, 20, 20, 0.8) 0%, rgba(0, 0, 0, 1) 70%);
+  z-index: 1;
+}
+
+.loading-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Main Text with Subtle Glow */
+.loading-text {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  letter-spacing: 0.15em;
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2),
+    0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.loading-text.animate-text {
+  opacity: 1;
+  transform: translateY(0);
+  animation: subtleGlow 3s ease-in-out infinite;
+}
+
+/* Minimal Subtitle */
+.loading-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1.5rem;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 1s ease-out 0.8s forwards;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+/* Simple Spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  opacity: 0;
+  animation: spin 2s linear infinite, fadeIn 0.8s ease-out 0.3s forwards;
+}
+
+/* Minimal Loading Dots */
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.loading-dots span {
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: dotFade 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.loading-dots span:nth-child(1) { animation-delay: 0s; }
+.loading-dots span:nth-child(2) { animation-delay: 0.3s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.6s; }
+
+/* Subtle Floating Particles */
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatUp 7s linear infinite;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Keyframe Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleGlow {
+  0%, 100% { 
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 30px rgba(255, 255, 255, 0.1);
+  }
+  50% { 
+    text-shadow: 
+      0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 25px rgba(255, 255, 255, 0.3),
+      0 0 35px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes dotFade {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh) translateX(0px);
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+    transform: translateY(-10vh) translateX(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20vh) translateX(40px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loading-text {
+    font-size: clamp(2rem, 10vw, 4rem);
+    letter-spacing: 0.1em;
+  }
+  
+  .loading-subtitle {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .loading-spinner {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .loading-dots {
+    gap: 8px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-text {
+    letter-spacing: 0.05em;
+  }
+  
+  .loading-subtitle {
+    font-size: 0.8rem;
+  }
+}
