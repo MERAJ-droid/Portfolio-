@@ -18,6 +18,7 @@ export function SkillsSection()
                                 "Typescript":.9,
                                 "React":.9,
                                 "TailwindCSS":.9,
+                                
                             }
                         },
                         {
@@ -35,30 +36,18 @@ export function SkillsSection()
                             fields:{
                                 "C++":.95,
                                 "Python":.9,
-                                "Javascript":.95,
-                                "Typescript":.9,
                                 "Java":.8,
+                                "Solidity":.7,
                             }
                         },
                         {
-                            title:"AI/ML & Data Science",
+                            title:"AI/ML & Computer Vision",
                             fields:{
                                 "TensorFlow":.85,
                                 "PyTorch":.8,
                                 "OpenCV":.85,
-                                "Scikit-learn":.85,
                                 "YOLO":.8,
                                 "HAAR Cascades":.75,
-                            }
-                        },
-                        {
-                            title:"Data Analysis",
-                            fields:{
-                                "Pandas":.9,
-                                "NumPy":.9,
-                                "Matplotlib":.85,
-                                "Jupyter":.9,
-                                "Data Preprocessing":.85,
                             }
                         },
                         {
@@ -77,16 +66,7 @@ export function SkillsSection()
                                 "Docker":.8,
                                 "Postman":.9,
                                 "VS Code":.95,
-                                "Linux":.8,
-                            }
-                        },
-                        {
-                            title:"UI/UX & Design",
-                            fields:{
                                 "Figma":.85,
-                                "Responsive Design":.9,
-                                "User Experience":.8,
-                                "Prototyping":.8,
                             }
                         }
                         
@@ -104,7 +84,7 @@ function SkillCard(props:{title:string,fields:{[key:string]:number|undefined}})
 {
     const cardRef = useRef<HTMLDivElement>(null);
     return(
-        <div ref={cardRef} className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.75rem)] xl:w-[calc(25%-0.75rem)] md:p-4">
+        <div ref={cardRef} className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(50%-0.5rem)] xl:w-[calc(33.333%-0.75rem)] md:p-4">
             <h1 className="font-bold text-2xl xl:text-3xl mb-4 text-center lg:text-left">{props.title}</h1>
             <div className="flex-col flex gap-2 mt-4">
                 {
